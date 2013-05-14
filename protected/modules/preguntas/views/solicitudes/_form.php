@@ -37,7 +37,7 @@
 			'buttonType'=>'submit',
 			'type'=>'success',
 			'icon'=>'white ok',
-			'label'=>$model->isNewRecord ? 'Guardar datos' : 'Actualizar datos',
+			'label'=>$model->isNewRecord ? 'Enviar solicitud' : 'Actualizar solicitud',
 		)); ?>
 
 		<?php $this->widget('bootstrap.widgets.TbButton', array(

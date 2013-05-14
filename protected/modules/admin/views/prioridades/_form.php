@@ -10,6 +10,8 @@
 
 	<?php echo $form->textFieldRow($model,'descripcion',array('class'=>'span5','maxlength'=>65)); ?>
 
+	<?php echo $form->textFieldRow($model,'tiempo_respuesta',array('class'=>'span5','maxlength'=>65)); ?>
+
 	<div class="form-actions">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'submit',

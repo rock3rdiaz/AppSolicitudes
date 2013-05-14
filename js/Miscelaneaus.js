@@ -40,14 +40,6 @@ function startScript(){
 },*/
 
 
-
-
-
-
-
-
-
-
 /******************************************************************************************************************************************/
 /******** Objeto literal encargado de todo el trabajo con los elementos presentes en el modulo 'secretaria' ****************************/
 objSecretaria = {

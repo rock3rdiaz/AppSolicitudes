@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'prioridades':
  * @property integer $idPrioridad
  * @property string $descripcion
+ * @property integer $tiempo_respuesta
  *
  * The followings are the available model relations:
  * @property Solicitudes[] $solicitudes
@@ -38,11 +39,12 @@ class Prioridades extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('descripcion', 'required'),
+			array('descripcion, tiempo_respuesta', 'required'),
+			array('tiempo_respuesta', 'numerical', 'integerOnly'=>true),
 			array('descripcion', 'length', 'max'=>65),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idPrioridad, descripcion', 'safe', 'on'=>'search'),
+			array('idPrioridad, descripcion, tiempo_respuesta', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,6 +68,7 @@ class Prioridades extends CActiveRecord
 		return array(
 			'idPrioridad' => 'Id Prioridad',
 			'descripcion' => 'Descripcion',
+			'tiempo_respuesta' => 'Tiempo Respuesta (en horas)',
 		);
 	}
 
@@ -82,6 +85,7 @@ class Prioridades extends CActiveRecord
 
 		$criteria->compare('idPrioridad',$this->idPrioridad);
 		$criteria->compare('descripcion',$this->descripcion,true);
+		$criteria->compare('tiempo_respuesta',$this->tiempo_respuesta);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -20,6 +20,7 @@ $this->breadcrumbs=array(
 	'attributes'=>array(
 		'idPrioridad',
 		'descripcion',
+		'tiempo_respuesta'
 	),
 )); ?>
 

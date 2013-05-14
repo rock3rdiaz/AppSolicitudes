@@ -82,7 +82,7 @@
 		                //array('label'=>'Link', 'url'=>'#'),
 		                '---',
 		                array('label'=>'Salir', 'url'=>'#', 'items'=>array(
-		                    array('label'=>'Salir del aplicativo', 'url'=>array('default/logout')),
+		                    array('label'=>'Salir del aplicativo', 'url'=>'http://192.168.0.202/sevenet/visual/index.php'),
 		                )),
 		            ),
 		        ),

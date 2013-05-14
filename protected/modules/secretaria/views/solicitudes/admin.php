@@ -72,11 +72,16 @@ $('.search-form form').submit(function(e){
 		//'idArea',		
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template'=>'{view}{redirect}',
+			'template'=>'{view}{redirect}{direct}',
 			'buttons'=>array(
 				'redirect'=>array(
 					'label'=>'', 					
 					'options'=>array('class'=>"icon-share-alt botones_redireccion", 'title'=>"Redireccionar"),
+					),
+				'direct'=>array(
+					'label'=>'', 					
+					'options'=>array('class'=>"icon-repeat", 'title'=>"Responder directamente"),
+					'url'=>'Yii::app()->controller->createUrl("respuestas/create",array("id_solicitud"=>$data->primaryKey))',
 					)
 				),
 		),
