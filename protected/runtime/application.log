@@ -8583,3 +8583,84 @@ Stack trace:
 REQUEST_URI=/AppSolicitudes/index.php?r=secretaria/respuestas/create&id_solicitud=14
 HTTP_REFERER=http://localhost/AppSolicitudes/index.php?r=secretaria/respuestas/create&id_solicitud=14
 ---
+2013/05/15 22:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "yii"' in C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('yii')
+#1 C:\Users\rockerW7\Documents\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\AppSolicitudes\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AppSolicitudes/index.php?r=yii
+---
+2013/05/16 21:06:41 [warning] [application] Failed to set unsafe attribute "adjunto" of "Solicitudes".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\preguntas\controllers\SolicitudesController.php (124)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:08:29 [warning] [application] Failed to set unsafe attribute "adjunto" of "Solicitudes".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\preguntas\controllers\SolicitudesController.php (78)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:14:19 [warning] [application] Failed to set unsafe attribute "adjunto" of "Respuestas".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\respuestas\controllers\RespuestasController.php (71)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:19:08 [error] [php] readfile(C:\xampp\htdocs\AppSolicitudes\protected/data/adjuntos/Chrysanthemum.jpg): failed to open stream: No such file or directory (C:\xampp\htdocs\AppSolicitudes\protected\modules\respuestas\controllers\RespuestasController.php:213)
+Stack trace:
+#0 C:\Users\rockerW7\Documents\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\Users\rockerW7\Documents\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\Users\rockerW7\Documents\yii\framework\web\filters\CFilterChain.php(134): RespuestasController->runAction()
+#4 C:\Users\rockerW7\Documents\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\Users\rockerW7\Documents\yii\framework\web\filters\CInlineFilter.php(59): RespuestasController->filterAccessControl()
+#7 C:\Users\rockerW7\Documents\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(266): RespuestasController->runActionWithFilters()
+#10 C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php(283): RespuestasController->run()
+#11 C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\Users\rockerW7\Documents\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\AppSolicitudes\index.php(13): CWebApplication->run()
+REQUEST_URI=/AppSolicitudes/index.php?r=respuestas/respuestas/downloadAdjunto&path=C%3A%5Cxampp%5Chtdocs%5CAppSolicitudes%5Cprotected%2Fdata%2Fadjuntos%2FChrysanthemum.jpg
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\respuestas\controllers\RespuestasController.php (213)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:21:08 [warning] [application] Failed to set unsafe attribute "adjunto" of "Solicitudes".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\preguntas\controllers\SolicitudesController.php (124)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:22:28 [warning] [application] Failed to set unsafe attribute "adjunto" of "Solicitudes".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\preguntas\controllers\SolicitudesController.php (124)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:23:29 [warning] [application] Failed to set unsafe attribute "adjunto" of "Solicitudes".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\preguntas\controllers\SolicitudesController.php (124)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:24:54 [warning] [application] Failed to set unsafe attribute "adjunto" of "Solicitudes".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\preguntas\controllers\SolicitudesController.php (124)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:26:02 [error] [php] readfile(C:\xampp\htdocs\AppSolicitudes\protected/data/adjuntos/Koala.jpg): failed to open stream: No such file or directory (C:\xampp\htdocs\AppSolicitudes\protected\modules\respuestas\controllers\RespuestasController.php:213)
+Stack trace:
+#0 C:\Users\rockerW7\Documents\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\Users\rockerW7\Documents\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\Users\rockerW7\Documents\yii\framework\web\filters\CFilterChain.php(134): RespuestasController->runAction()
+#4 C:\Users\rockerW7\Documents\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\Users\rockerW7\Documents\yii\framework\web\filters\CInlineFilter.php(59): RespuestasController->filterAccessControl()
+#7 C:\Users\rockerW7\Documents\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(266): RespuestasController->runActionWithFilters()
+#10 C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php(283): RespuestasController->run()
+#11 C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\Users\rockerW7\Documents\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\AppSolicitudes\index.php(13): CWebApplication->run()
+REQUEST_URI=/AppSolicitudes/index.php?r=respuestas/respuestas/downloadAdjunto&path=C%3A%5Cxampp%5Chtdocs%5CAppSolicitudes%5Cprotected%2Fdata%2Fadjuntos%2FKoala.jpg
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\respuestas\controllers\RespuestasController.php (213)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:27:19 [warning] [application] Failed to set unsafe attribute "adjunto" of "Respuestas".
+in C:\xampp\htdocs\AppSolicitudes\protected\modules\respuestas\controllers\RespuestasController.php (71)
+in C:\xampp\htdocs\AppSolicitudes\index.php (13)
+2013/05/20 15:38:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "downloadAdjunto" solicitada.' in C:\Users\rockerW7\Documents\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\rockerW7\Documents\yii\framework\web\CController.php(271): CController->missingAction('downloadAdjunto')
+#1 C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php(283): CController->run('downloadAdjunto')
+#2 C:\Users\rockerW7\Documents\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('preguntas/respu...')
+#3 C:\Users\rockerW7\Documents\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\AppSolicitudes\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AppSolicitudes/index.php?r=preguntas/respuestas/downloadAdjunto&path=C%3A%5Cxampp%5Chtdocs%5CAppSolicitudes%5Cprotected%2Fdata%2Fadjuntos_respuestas%2FTulips.jpg
+HTTP_REFERER=http://localhost/AppSolicitudes/index.php?r=preguntas/respuestas/view&id=36
+---

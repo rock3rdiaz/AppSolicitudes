@@ -38,7 +38,7 @@ $this->breadcrumbs=array(
 		array('name'=>'adjunto', 
 			'type'=>'raw',
 			//'value'=>CHtml::link($model->adjunto, 'download.php?file='.Yii::app()->basePath.'/data/adjuntos/'.$model->adjunto)),
-			'value'=>CHtml::link($model->adjunto, Yii::app()->controller->createUrl("downloadAdjunto", array("path"=>Yii::app()->basePath.'/data/adjuntos/'.$model->adjunto)))
+			'value'=>CHtml::link($model->adjunto, Yii::app()->controller->createUrl("downloadAdjunto", array("path"=>Yii::app()->basePath.'/data/adjuntos_solicitudes/'.$model->adjunto)))
 			),
 	),
 )); ?>

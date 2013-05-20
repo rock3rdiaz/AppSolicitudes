@@ -53,10 +53,10 @@ class Solicitudes extends CActiveRecord
 		return array(
 			array('fecha_envio, descripcion, idUsuario_origen, estado, idPrioridad, idCategoria, idArea_origen, idUsuario_temporal', 'required'),
 			array('idPrioridad, idCategoria, idArea_origen', 'numerical', 'integerOnly'=>true),
-			array('descripcion', 'length', 'max'=>1000),
+			array('descripcion', 'length', 'max'=>8000),
 			array('idUsuario_origen, idUsuario_destino, idUsuario_temporal', 'length', 'max'=>4),
 			array('estado', 'length', 'max'=>65),
-			array('adjunto', 'length', 'max'=>40),
+			array('adjunto', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('idSolicitud, fecha_envio, descripcion, idUsuario_origen, estado, idPrioridad, idCategoria, idUsuario_destino, idArea_origen, idUsuario_temporal', 'safe', 'on'=>'search'),

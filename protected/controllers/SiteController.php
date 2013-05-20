@@ -92,6 +92,16 @@ class SiteController extends Controller
 		if(isset($_POST['LoginForm']))
 		{
 			$model->attributes=$_POST['LoginForm'];
+
+
+			/*Para usuarios temporales, el numero de cedula ingresado debe ser completado por ceros a la izquierda. Motivo: valor del campo 'cedula' presente en la tabla 'temp'*/
+			if($model->password >= 8000){
+				$num_ceros = 11 - strlen($model->username);
+				$model->username = str_repeat('0', $num_ceros).$model->username;
+			}
+
+
+
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()){
 				//$this->redirect(Yii::app()->user->returnUrl);

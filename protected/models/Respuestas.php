@@ -9,6 +9,7 @@
  * @property string $descripcion
  * @property integer $idPuntaje
  * @property integer $idSolicitud
+ *  @property integer $adjunjto
  *
  * The followings are the available model relations:
  * @property Puntajes $idPuntaje0
@@ -45,6 +46,8 @@ class Respuestas extends CActiveRecord
 			array('fecha_envio, descripcion, idSolicitud', 'required'),
 			array('idPuntaje, idSolicitud', 'numerical', 'integerOnly'=>true),
 			array('descripcion', 'length', 'max'=>255),
+			array('adjunto', 'length', 'max'=>300),
+			array('adjunto', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>true), 
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('idRespuesta, fecha, descripcion, idPuntaje, idSolicitud', 'safe', 'on'=>'search'),
@@ -74,6 +77,7 @@ class Respuestas extends CActiveRecord
 			'fecha_envio' => 'Fecha respuesta',
 			'descripcion' => 'Descripcion respuesta',
 			'idPuntaje' => 'Id Puntaje',
+			'adjunto' => 'Adjunto',
 			'idSolicitud' => 'Id Solicitud',
 		);
 	}

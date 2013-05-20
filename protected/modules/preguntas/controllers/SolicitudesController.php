@@ -84,7 +84,7 @@ class SolicitudesController extends Controller
 				
 				if($model->save()){
 					if($model->adjunto != NULL){
-						$file->saveAs(Yii::app()->basePath.'/data/adjuntos/'.$file);
+						$file->saveAs(Yii::app()->basePath.'/data/adjuntos_solicitudes/'.$file);
 					}				
 					$this->redirect(array('view','id'=>$model->idSolicitud));
 				}
@@ -122,8 +122,18 @@ class SolicitudesController extends Controller
 		if(isset($_POST['Solicitudes']))
 		{
 			$model->attributes=$_POST['Solicitudes'];
-			if($model->save())
+			
+			$file = CUploadedFile::getInstance($model, 'adjunto');
+			
+			$model->adjunto = $file;	
+			if($model->save()){
+				if($model->adjunto != NULL){
+					$file->saveAs(Yii::app()->basePath.'/data/adjuntos_solicitudes/'.$file);
+				}
 				$this->redirect(array('view','id'=>$model->idSolicitud));
+			}
+
+				
 		}
 
 		$this->render('update',array(

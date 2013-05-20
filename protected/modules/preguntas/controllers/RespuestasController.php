@@ -31,11 +31,11 @@ class RespuestasController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'downloadAdjunto'),
 				'users'=>array(Yii::app()->getSession()->get('login')),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete', 'downloadAdjunto'),
 				'users'=>array(Yii::app()->getSession()->get('login')),
 			),
 			array('deny',  // deny all users
@@ -179,5 +179,16 @@ class RespuestasController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+
+	/**
+	 * @summary: Accion que permite realizar la descarga del archivo que ha sido adjuntado por el usuario
+	 * @param  [string] $path [String que contiene la ruta completa en el servidor para acceder al archivo]
+	 * @return [img]       [Imagen]
+	 */
+	public function actionDownloadAdjunto($path){			
+		header("Content-disposition: attachment; filename=$path");
+		header("Content-Type: application/force-download");
+		readfile($path);
 	}
 }

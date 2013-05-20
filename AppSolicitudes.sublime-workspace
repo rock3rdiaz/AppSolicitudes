@@ -5,7 +5,11 @@
 		[
 			[
 				"model",
-				"model_programa_ejercicios_ejercicios"
+				"model_solicitud"
+			],
+			[
+				"id_sol",
+				"id_solicitud"
 			],
 			[
 				"datos",
@@ -504,7 +508,31 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/view.php",
+		"/C/Program Files/nodejs/node_modules/npm/lib/npm.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/controllers/SiteController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/models/LoginForm.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/components/UserIdentity.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/views/site/login.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/DefaultController.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/models/Solicitudes.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/solicitudes/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/js/Miscelaneaus.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/models/Prioridades.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/RespuestasController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/create.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/create.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/RespuestasController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/SolicitudesController.php",
+		"/C/Users/rockerW7/Documents/yii/framework/zii/widgets/grid/CButtonColumn.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/admin.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/_form.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/default/_estDatosGenerales.php",
@@ -523,7 +551,6 @@
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/admin/views/prioridades/_form.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/admin/views/prioridades/admin.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/admin/views/prioridades/view.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/models/Prioridades.php",
 		"/C/Users/rockerW7/Documents/Archivos Comfenalco/Documentos ingdiaz/Proyectos/AppSolicitudes/src/AppSolicitudes/branches/0.7/protected/models/Prioridades.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/models/Puntajes.php",
 		"/C/xampp/htdocs/AppGestionHorarios/js/script.js",
@@ -608,30 +635,7 @@
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/enfermedad/admin.php",
 		"/C/Users/rockerW7/Desktop/EvaluacionMedicaController.php",
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/controllers/EnfermedadController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/_viewAntecedentesPatologicos.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/controllers/PlanEntrenamientoController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/secretaria/views/cita/admin.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/examen/_form.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/administrador/controllers/DefaultController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/models/DatosExtraUsuario.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/models/VUsuarios.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/admin.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/views/planEntrenamiento/_form.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/views/planEntrenamiento/update.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/views/planEntrenamiento/create.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/models/PlanEntrenamiento.php",
-		"/C/xampp/htdocs/PHPTraining/Nivel3/index1.php",
-		"/C/xampp/htdocs/PHPTraining/Ejemplo mysqli/consultaInsert.php",
-		"/C/xampp/htdocs/PHPTraining/Ejemplo mysqli/consultaSelect.php",
-		"/C/xampp/htdocs/PHPTraining/Ejemplo mysqli/conexion.php",
-		"/C/Users/rockerW7/Dropbox/Proyectos/PHPTraining/Ejemplo mysqli/consultaInsert.php",
-		"/C/Users/rockerW7/Dropbox/Proyectos/PHPTraining/Ejemplo mysqli/consultaSelect.php",
-		"/C/Users/rockerW7/Dropbox/Proyectos/PHPTraining/Ejemplo mysqli/conexion.php",
-		"/C/xampp/htdocs/PHPTraining/Nivel2/index.php",
-		"/C/Users/rockerW7/Dropbox/Proyectos/PHPTraining/Nivel3/conexion.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/models/ValoracionFuncional.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/models/ImpresionDiagnostica.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/views/valoracionFuncional/_viewAntecedentesUsuario.php"
+		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/_viewAntecedentesPatologicos.php"
 	],
 	"find":
 	{
@@ -787,7 +791,7 @@
 		[
 			[
 				"",
-				"/C/xampp/htdocs/AppGestionHorarios/AppGestionHorarios.sublime-project"
+				"/C/xampp/htdocs/PHPTraining/PHPTraining.sublime-project"
 			]
 		],
 		"width": 380.0

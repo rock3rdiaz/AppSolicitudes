@@ -14,7 +14,7 @@
 	<?php echo $form->textAreaRow($model,'descripcion',array('class'=>'span5','maxlength'=>255, 'rows'=>15, 'id'=>'preguntas_descripcion')); ?>	
 
 	<?php $listado_puntajes = CHtml::listData(Puntajes::model()->findAll(array('order'=>'descripcion asc')), 'idPuntaje', 'descripcion');?>
-	<?php echo $form->dropDownListRow($model, 'idPuntaje',  $listado_puntajes, array('class'=>'span5')); ?>
+	<?php echo $form->dropDownListRow($model, 'idPuntaje',  $listado_puntajes, array('empty'=>'-- Seleccione una opcion --', 'class'=>'span5')); ?>
 
 	<?php //echo $form->textFieldRow($model,'adjunto',array('class'=>'span5','maxlength'=>1)); ?>
 

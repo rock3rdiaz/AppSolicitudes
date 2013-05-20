@@ -72,7 +72,14 @@ class RespuestasController extends Controller
 			$model->fecha_envio = date('Y-m-d H:i:s');
 			$model->idSolicitud = $id_solicitud;//Codigo de la solicitud ha responder
 
+			$file = CUploadedFile::getInstance($model, 'adjunto');
+			$model->adjunto = $file;
+
 			if($model->save()){
+
+				if($model->adjunto != NULL){
+						$file->saveAs(Yii::app()->basePath.'/data/adjuntos_respuestas/'.$file);
+				}	
 
 				/*Actualizo el estado de la solicitud que se acaba de responder*/
 				$model_solicitud = Solicitudes::model()->findByPk($model->idSolicitud);

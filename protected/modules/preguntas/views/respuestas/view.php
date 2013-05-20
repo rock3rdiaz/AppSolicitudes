@@ -25,6 +25,12 @@ $this->breadcrumbs=array(
 		'fecha_envio',
 		'descripcion',		
 		array('label'=>'Nombre del destinatario', 'value'=>Empleados::model()->getNombreCompleto($model->idSolicitud0->idUsuario_destino)),
+		array('name'=>'adjunto', 
+			'label'=>'Adjunto de la respuesta',
+			'type'=>'raw',
+			//'value'=>CHtml::link($model->adjunto, 'download.php?file='.Yii::app()->basePath.'/data/adjuntos/'.$model->adjunto)),
+			'value'=>CHtml::link($model->adjunto, Yii::app()->controller->createUrl("downloadAdjunto", array("path"=>Yii::app()->basePath.'/data/adjuntos_respuestas/'.$model->adjunto)))
+		),
 		array('name'=>'idPuntaje', 'label'=>'Puntaje', 'value'=>isset($model->idPuntaje)?$model->idPuntaje0->descripcion:Null)
 	),
 )); ?>

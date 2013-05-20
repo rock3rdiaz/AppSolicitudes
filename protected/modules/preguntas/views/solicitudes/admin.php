@@ -56,9 +56,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template'=>'{view}{delete}',
+			'template'=>'{view}{update}{delete}',
 			'buttons'=>array(
 				'delete'=>array(
+					'visible'=>'($data->estado == "pendiente") ? true: false',
+					),
+				'update'=>array(
 					'visible'=>'($data->estado == "pendiente") ? true: false',
 					)
 				)

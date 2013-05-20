@@ -69,8 +69,8 @@ objSecretaria = {
 			$.ajax({
 				dataType: "html",
 				type: 'post',
-				url: "http://192.168.0.171/AppSolicitudes/index.php?r=secretaria/solicitudes/ajaxActualizarSolicitud",
-				//url: "http://localhost/AppSolicitudes/branches/0.7/index.php?r=secretaria/solicitudes/ajaxActualizarSolicitud",
+				//url: "http://192.168.0.171/AppSolicitudes/index.php?r=secretaria/solicitudes/ajaxActualizarSolicitud",
+				url: "http://localhost/AppSolicitudes/index.php?r=secretaria/solicitudes/ajaxActualizarSolicitud",
 				data: 'data='+json_datos_solicitud,
 				success: function(data){
 					alert("Exito!");

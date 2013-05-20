@@ -85,7 +85,7 @@ class RespuestasController extends Controller
 		}
 
 		$this->render('create',array(
-			'descripcion_solicitud'=>Solicitudes::model()->findByPk($id_solicitud)->descripcion,//Enviamos la descripcion de la 
+			'descripcion_solicitud'=>Solicitudes::model()->findByPk($id_solicitud)->descripcion,//Enviamos la descripcion de la solicitud
 			'model'=>$model,
 		));
 	}
