@@ -508,33 +508,41 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/view.php",
-		"/C/Program Files/nodejs/node_modules/npm/lib/npm.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/SolicitudesController.php",
+		"/C/xampp/htdocs/AppSolicitudes/js/Miscelaneaus.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/admin.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/admin.php",
+		"/C/Users/rockerW7/Dropbox/Trabajo de Grado - Mamita/Registro extendido - Jose Alvaro.pdf",
+		"/C/xampp/htdocs/AppSolicitudes/AppSolicitudes.sublime-workspace",
+		"/C/xampp/htdocs/AppSolicitudes/protected/extensions/highcharts/assets/highcharts.src.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/RespuestasController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/RespuestasController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/models/Solicitudes.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/SolicitudesController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/models/Respuestas.php",
+		"/C/Program Files/nodejs/node_modules/npm/lib/npm.js",
 		"/C/xampp/htdocs/AppSolicitudes/protected/controllers/SiteController.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/models/LoginForm.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/components/UserIdentity.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/view.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/view.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/admin.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/views/site/login.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/_form.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/DefaultController.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/_form.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/models/Solicitudes.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/solicitudes/admin.php",
-		"/C/xampp/htdocs/AppSolicitudes/js/Miscelaneaus.js",
 		"/C/xampp/htdocs/AppSolicitudes/protected/models/Prioridades.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/RespuestasController.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/_form.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/_form.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/create.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/create.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/RespuestasController.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/SolicitudesController.php",
 		"/C/Users/rockerW7/Documents/yii/framework/zii/widgets/grid/CButtonColumn.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/admin.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/_form.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/default/_estDatosGenerales.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/default/index.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/config/main.php",
@@ -627,15 +635,7 @@
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/models/HistoriaGYM.php",
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/views/valoracionFuncional/update.php",
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/create.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/_viewDatosGenerales.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/_view.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/enfermedad/_search.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/enfermedad/update.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/enfermedad/_form.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/enfermedad/admin.php",
-		"/C/Users/rockerW7/Desktop/EvaluacionMedicaController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/controllers/EnfermedadController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/_viewAntecedentesPatologicos.php"
+		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/_viewDatosGenerales.php"
 	],
 	"find":
 	{
@@ -656,6 +656,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"model",
 			"int NOT NULL",
 			"model_programa_ejercicios_ejercicios",
 			"value",
@@ -791,7 +792,7 @@
 		[
 			[
 				"",
-				"/C/xampp/htdocs/PHPTraining/PHPTraining.sublime-project"
+				"/C/xampp/htdocs/AppGestionHorarios/AppGestionHorarios.sublime-project"
 			]
 		],
 		"width": 380.0

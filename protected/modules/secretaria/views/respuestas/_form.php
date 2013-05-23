@@ -22,6 +22,14 @@
 			'icon'=>'white ok',
 			'label'=>$model->isNewRecord ? 'Responder solicitud' : 'Actualizar respuesta',
 		)); ?>
+
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+			'buttonType'=>'buttonLink',
+			'type'=>'success',
+			'icon'=>'white remove',
+			'label'=>'Regresar',
+			'url'=>array('solicitudes/admin')
+		)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

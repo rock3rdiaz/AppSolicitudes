@@ -43,7 +43,8 @@ $('.search-form form').submit(function(){
 	'type'=>'condensed striped',
 	'columns'=>array(
 		//'idSolicitud',
-		'fecha_envio',
+		array('name'=>'fecha_envio',
+			'value'=>'explode(" ", $data->fecha_envio)[0]'),
 		'descripcion',
 		array('name'=>'idUsuario_origen', 'header'=>'Remitente',
 			'value'=>'($data->idUsuario_origen < 8000) ? Empleados::model()->getNombreCompleto($data->idUsuario_origen) : Temp::model()->getNombreCompleto($data->idUsuario_origen)'//Usuarios de nomina < 8000; Usuarios temporales >= 8000
@@ -61,12 +62,17 @@ $('.search-form form').submit(function(){
 		*/
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
-			'template'=>'{view}{update}',		
+			'template'=>'{view}{update}{regresar}',		
 			'buttons'=>array(
 				'update'=>array(
 					'icon'=>'icon-thumbs-up',
 					'label'=>'Responder',
 					'url'=>'Yii::app()->createUrl("respuestas/respuestas/create", array("id_solicitud"=>$data->primaryKey))'
+					),
+				'regresar'=>array(
+					'icon'=>'icon-ban-circle',
+					'label'=>'No me pertenece',
+					'url'=>'Yii::app()->createUrl("respuestas/solicitudes/devolver", array("id_solicitud"=>$data->primaryKey))'
 					)
 				)	
 		),

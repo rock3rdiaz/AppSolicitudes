@@ -19,7 +19,8 @@ $this->breadcrumbs=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idSolicitud',
-		array('label'=>'Fecha solicitud', 'value'=>$model->idSolicitud0->fecha_envio),
+		array('label'=>'Fecha envio solicitud', 'value'=>explode(" ", $model->idSolicitud0->fecha_envio)[0]),
+		array('label'=>'Hora envio solicitud', 'value'=>explode(" ", $model->idSolicitud0->fecha_envio)[1]),
 		array('label'=>'Nombre del destinatario', 
 			'value'=>($model->idSolicitud0->idUsuario_origen < 800) ? Empleados::model()->getNombreCompleto($model->idSolicitud0->idUsuario_origen) : Temp::model()->getNombreCompleto($model->idSolicitud0->idUsuario_origen)),
 		array('label'=>'Descripcion solicitud', 'value'=>$model->idSolicitud0->descripcion),
@@ -29,7 +30,10 @@ $this->breadcrumbs=array(
 			'value'=>CHtml::link($model->idSolicitud0->adjunto, Yii::app()->controller->createUrl("downloadAdjunto", array("path"=>Yii::app()->basePath.'/data/adjuntos_solicitudes/'.$model->idSolicitud0->adjunto)))
 		),
 		//'idRespuesta',
-		'fecha_envio',
+		array('name'=>'fecha_envio', 'label'=>'Fecha envio respuesta',
+			'value'=>explode(" ", $model->fecha_envio)[0]),
+		array('name'=>'fecha_envio', 'label'=>'Hora envio respuesta',
+			'value'=>explode(" ", $model->fecha_envio)[1]),
 		'descripcion',	
 		array('name'=>'adjunto', 
 			'label'=>'Adjunto de la respuesta',

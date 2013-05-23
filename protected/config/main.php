@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Mesa de ayuda',
 	'language'=>'es',
+	'timeZone'=>'America/Bogota',//Definimos la zona horaria con la que trabaja la aplicacion
 
 	// preloading 'log' component
 	'preload'=>array('log',
@@ -63,7 +64,7 @@ return array(
 		
 		/*String de conexion con la BD propia de la aplicacion*/
 		'db'=>array(
-			'connectionString' => 'sqlsrv:Server=192.168.0.171;Database=DBSolicitudes',			
+			'connectionString' => 'sqlsrv:Server=192.168.0.171;Database=DBSolicitudes_test',			
 			'username' => 'sa',
 			'password' => 'sistemas',
 			'charset' => 'utf8',

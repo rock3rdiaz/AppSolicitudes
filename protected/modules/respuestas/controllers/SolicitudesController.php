@@ -31,11 +31,11 @@ class SolicitudesController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'downloadAdjunto'),
+				'actions'=>array('create','update', 'downloadAdjunto', 'devolver'),
 				'users'=>array(Yii::app()->getSession()->get('login')),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete', 'downloadAdjunto'),
+				'actions'=>array('admin','delete', 'downloadAdjunto', 'devolver'),
 				'users'=>array(Yii::app()->getSession()->get('login')),
 			),
 			array('deny',  // deny all users
@@ -183,5 +183,16 @@ class SolicitudesController extends Controller
 		header("Content-disposition: attachment; filename=$path");
 		header("Content-Type: application/force-download");
 		readfile($path);
+	}
+
+	/**
+	 * @summary: Accion que permite devolver al modulo de los filtros (secretaria) una solicitud que no pertence al usuario de sistemas elegido. El objetivo es poder retornar solicitudes asociadas a usuarios de sistemas equivocados.
+	 * @param  [int] $id_solicitud [Codigo de la solicitud a regresar]
+	 */
+	public function actionDevolver($id_solicitud){
+
+		Solicitudes::model()->updateByPk($id_solicitud, array('idUsuario_destino'=>NULL));
+
+		$this->redirect(array('solicitudes/admin'));
 	}
 }

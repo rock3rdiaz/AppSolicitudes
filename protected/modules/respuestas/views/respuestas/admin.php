@@ -46,7 +46,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	//'filter'=>$model,
 	'columns'=>array(
 		'idRespuesta',
-		'fecha_envio',
+		array('name'=>'fecha_envio',
+			'value'=>'explode(" ", $data->fecha_envio)[0]'),
 		'descripcion',		
 		array('name'=>'idPuntaje', 'value'=>'(isset($data->idPuntaje))?$data->idPuntaje0->descripcion:Null'),
 		/*array('name'=>'idSolicitud', 'value'=>'Usuarios::model()->getNombreCompleto($data->idSolicitud0->idUsuario_origen)'),*/

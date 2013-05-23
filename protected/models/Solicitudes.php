@@ -87,7 +87,7 @@ class Solicitudes extends CActiveRecord
 	{
 		return array(
 			'idSolicitud' => 'Id Solicitud',
-			'fecha_envio' => 'Fecha Envio',
+			'fecha_envio' => 'Fecha de envio',
 			'descripcion' => 'Descripcion',
 			'idUsuario_origen' => 'Id remitente',
 			'estado' => 'Estado',
