@@ -328,7 +328,7 @@ class Empleados extends CActiveRecord
 
 		foreach($empleados_sistemas->getData() as $u){
 			/*Los usuarios con los siguientes codigos no deben incluirse en el listado de posibles destinatarios puesto que son el jefe, la secretaria, un funcionario inactivo y el electricista*/
-			if($u['KEYNOM'] == '0202' || $u['KEYNOM'] == '0056' || $u['KEYNOM'] == '1609' || $u['KEYNOM'] == '0121'){
+			if(/*$u['KEYNOM'] == '0202' ||*/ $u['KEYNOM'] == '0056' || $u['KEYNOM'] == '1609' || $u['KEYNOM'] == '0121'){
 				continue;
 			}
 			$posibles_destinatarios[$u['KEYNOM']] = $this->getNombreCompleto($u['KEYNOM']);

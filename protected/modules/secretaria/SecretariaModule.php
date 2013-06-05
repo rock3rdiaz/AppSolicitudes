@@ -24,6 +24,9 @@ class SecretariaModule extends CWebModule
 
 			return $controller->items_menu =  array(
 												array('label'=>'Inicio', 'url'=>array('default/index')),
+												array('label'=>'Informes', 'url'=>'#', 'items'=>array(
+								                    array('label'=>'Oportunidad en la solucion a requerimientos', 'url'=>array('informes/indicadorOportunidadSolucionRequerimiento')),	
+								                )),
 								                array('label'=>'Filtrado de solicitudes', 'url'=>'#', 'items'=>array(
 								                    array('label'=>'Solicitudes pendientes', 'url'=>array('solicitudes/admin')),	
 								                )),

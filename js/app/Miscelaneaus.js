@@ -28,16 +28,13 @@ function startScript(){
 	*/
 	$("#preguntas_descripcion").attr('disabled', true);
 
-	/*Instruccion que se encarga de actualizar las grillas de datos necesarias.*/
-	//window.setInterval("refreshGrids()", 5000);	
+
+	$("body").find("#btn_generar").on('click', function(){
+		objSecretaria.graficarIndicador();
+	});	
 }
 
-/*refreshGrids = function(){
-	$.fn.yiiGridView.update('solicitudes-grid', {
-		data: $(this).serialize(),
-	});	
-	window.clearInterval(8000);
-},*/
+
 
 
 /******************************************************************************************************************************************/
@@ -74,6 +71,7 @@ objSecretaria = {
 				data: 'data='+json_datos_solicitud,
 				success: function(data){
 					alert("Exito!");
+					window.setTimeout(function(){location.reload(true)}, 0);//Refreso automatico
 				}, 
 				error: function(data){
 					alert(data.responseText);
@@ -84,5 +82,82 @@ objSecretaria = {
 			alert("Debe seleccionar un destinatario!! :(");
 		}		
 	},
+
+	//@summary: Metodo que via xhr obtiene los datos necesarios para construir la grafica dado los parametros de busqueda
+	graficarIndicador: function(){
+
+		var fechas = {
+			fecha_desde:  $("div").find("#fecha_desde").val(),
+			fecha_hasta:  $("div").find("#fecha_hasta").val(),
+		};
+
+		var xhr = $.get(
+			//"http://192.168.0.231/AppSolicitudes/index.php?r=secretaria/informes/xHRGetGrafico",			
+			"http://localhost/AppSolicitudes/index.php?r=secretaria/informes/xHRGetGrafico",			
+			'fechas='+JSON.stringify(fechas),
+			'',
+			'json'
+		);
+
+		xhr.done(function(data){
+
+			//Personalizacion de las labels de exportacion del grafico
+			Highcharts.setOptions({
+				lang: {
+					contextButtonTitle: 'Opciones de exportacion',
+					printChart: 'Imprimir grafico',
+					downloadJPEG: 'Descargar como JPG',
+					downloadPNG: 'Descargar como PNG',
+					downloadPDF: 'Descargar como PDF',
+					downloadSVG: 'Descargar como Grafico vectorial SVG',
+				}
+			});
+
+
+			//Objeto json que posee los parametros de configuracion del grafico a generar
+			var options = {
+				chart: {
+		            type: 'bar',
+		        },
+		        
+		        title: {
+		            text: 'Oportunidad en la solución a requerimientos'
+		        },
+
+		        subtitle: {
+		        	text: 'El procentaje de cumplimiento es de ' + ( ( (parseInt(data.total_solicitudes_resueltas) / parseInt(data.total_solicitudes) ) * 100).toFixed(2) + '%'),
+		        },
+
+		        xAxis: {
+		            categories: ['Incidencias']
+		        },
+
+		        yAxis: {
+		            title: {
+		                text: 'Total de coincidencias'
+		            },
+		        },
+
+		        series: [{
+		            name: 'Total solicitudes resueltas',
+		            data: [parseInt(data.total_solicitudes_resueltas)]
+		        }, {
+		        	name: 'Total Solicitudes ',
+		            data: [parseInt(data.total_solicitudes)]		         
+		        }],
+
+		        plotOptions: {
+	                bar: {
+	                    dataLabels: {
+	                        enabled: true,
+	                    }
+	                }
+	            },
+			};
+
+			//Adicion del grafico al div definido para esto
+			$("body").find("#content_grafica").highcharts(options);
+		});
+	}
 }
 /********************************************************************************************************************************************/

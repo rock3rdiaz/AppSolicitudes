@@ -20,9 +20,9 @@ $this->breadcrumbs=array(
 	'attributes'=>array(
 		'idSolicitud',
 		array('name'=>'fecha_envio',
-			'value'=>explode(" ", $model->fecha_envio)[0]),
+			'value'=>substr($model->fecha_envio, 0, 10)),
 		array('name'=>'fecha_envio', 'label'=>'Hora de envio',
-			'value'=>explode(" ", $model->fecha_envio)[1]),
+			'value'=>substr($model->fecha_envio, 11, 8)),
 		//'idUsuario_origen',
 		array('label'=>'Nombre remitente',
 			'value'=>($model->idUsuario_origen < 8000) ? Empleados::model()->getNombreCompleto($model->idUsuario_origen) : Temp::model()->getNombreCompleto($model->idUsuario_origen),

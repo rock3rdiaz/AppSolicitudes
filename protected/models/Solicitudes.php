@@ -60,7 +60,7 @@ class Solicitudes extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('idSolicitud, fecha_envio, descripcion, idUsuario_origen, estado, idPrioridad, idCategoria, idUsuario_destino, idArea_origen, idUsuario_temporal', 'safe', 'on'=>'search'),
-			array('adjunto', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>true), 
+			array('adjunto', 'file', 'types'=>'jpg, gif, png, xlsx, xls, docx, doc, txt', 'allowEmpty'=>true), 
 		);
 	}
 
@@ -225,7 +225,7 @@ class Solicitudes extends CActiveRecord
 	 * @param  [string] $estado     [Estado de la solicitud: 'pendiente' o 'resuelta']
 	 * @return [int]  $num          [Numero de registros encontrados]
 	 */
-	public function getNumSolicitudesPorEstado($id_usuario, $estado){
+	public function getNumSolicitudesPorEstado($id_usuario = '', $estado){
 
 		$criteria = new CDbCriteria();
 		$criteria->select = 'idSolicitud';		
@@ -236,25 +236,22 @@ class Solicitudes extends CActiveRecord
 	}
 
 	/**
-	 * @summary: Metodo que permite obtener solo las solicitudes enviadas por cada usuario o dadas por cada usuario. Solo usado por los usuarios que envian solicitudes
-	 * @param  [string] $tipo_usuario [Tipo de usuario: puede ser 'externo' o 'sistema']
-	 * @param  [int] $id_usuario [Id del usuario que envio la solicitud que ha sido contestada.]
-	 * @return [CActiveDataProvider] $datos [Datos encontrados]
+	 * @summary: Metodo que permite obtener el numero total de solicitudes dadas dos fechas
+	 * @param [sting] $fecha_desde [Fecha de inicio de la busqueda]
+	 * @param [sting] $estado [Estado de la solicitude: pendiente, cerrada o resuelta]
+	 * @param [sting] $fecha_hasta [Fecha final de la busqueda]
+	 * @return [int] $num [Numero total de solicitudes encontradas]
 	 */
-	/*public function getAllSolicitudes($id_usuario){
+	public function getNumAll($fecha_desde, $fecha_hasta, $estado = ''){
 
 		$criteria = new CDbCriteria();
+
+		if($estado != ''){
+			$criteria->condition = "estado <> '$estado'";
+		}
 		
-		$criteria->condition = "idUsuario_origen = '$id_usuario'";
+		$criteria->addBetweenCondition('fecha_envio', $fecha_desde, $fecha_hasta);	
 
-		$criteria->compare('estado',$this->estado,true);
-		$criteria->compare('idPrioridad',$this->idPrioridad);
-		$criteria->compare('idCategoria',$this->idCategoria);
-		
-
-		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
-		));
-
-	}*/
+		return $this->count($criteria);
+	}
 }

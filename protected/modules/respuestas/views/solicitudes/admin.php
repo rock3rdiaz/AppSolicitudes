@@ -4,8 +4,8 @@
 
 <?php
 $this->breadcrumbs=array(
-	'Mis solicitudes'=>array('admin'),
-	'Solicitudes pendientes',
+	'Solicitudes por responder'=>array('admin'),
+	'Administracion',
 );
 
 /*$this->menu=array(
@@ -27,7 +27,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="h1_titulos">Mis solicitudes pendientes</h1>
+<h1 class="h1_titulos">Solicitudes por responder</h1>
 
 <?php echo CHtml::link('B&uacute;squeda avanzada','#',array('class'=>'search-button btn')); ?>
 <div class="search-form" style="display:none">
@@ -44,7 +44,7 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		//'idSolicitud',
 		array('name'=>'fecha_envio',
-			'value'=>'explode(" ", $data->fecha_envio)[0]'),
+			'value'=>'substr($data->fecha_envio, 0, 10)'),
 		'descripcion',
 		array('name'=>'idUsuario_origen', 'header'=>'Remitente',
 			'value'=>'($data->idUsuario_origen < 8000) ? Empleados::model()->getNombreCompleto($data->idUsuario_origen) : Temp::model()->getNombreCompleto($data->idUsuario_origen)'//Usuarios de nomina < 8000; Usuarios temporales >= 8000
@@ -64,6 +64,9 @@ $('.search-form form').submit(function(){
 			'class'=>'bootstrap.widgets.TbButtonColumn',
 			'template'=>'{view}{update}{regresar}',		
 			'buttons'=>array(
+				'view'=>array(
+					'url'=>'Yii::app()->createUrl("respuestas/solicitudes/view", array("id"=>$data->primaryKey))'
+					),
 				'update'=>array(
 					'icon'=>'icon-thumbs-up',
 					'label'=>'Responder',

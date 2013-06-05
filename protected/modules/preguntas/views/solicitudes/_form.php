@@ -24,7 +24,7 @@
 	<?php //echo $form->textFieldRow($model,'idUsuario_destino',array('class'=>'span5')); ?>
 	<?php echo $form->dropDownListRow($model, 'idUsuario_temporal', $listado_usuarios, array('empty'=>'-- Seleccione el usuario que respondera su solicitud --', 'class'=>'span5'));?>	
 
-	<?php echo $form->textAreaRow($model,'descripcion',array('class'=>'span5','maxlength'=>255, 'rows'=>15)); ?>	
+	<?php echo $form->textAreaRow($model,'descripcion',array('class'=>'span5','maxlength'=>8000, 'rows'=>15)); ?>	
 
 	<?php echo $form->dropDownListRow($model, 'idArea_origen', CHtml::listData(Areas::model()->findAll(array('order'=>'nombre asc')), 'idArea', 'nombre'), array('empty'=>'-- Seleccione el area desde la cual envia la solicitud --', 'class'=>'span5'));?>	
 

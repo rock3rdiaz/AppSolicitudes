@@ -112,7 +112,7 @@ class SiteController extends Controller
 				/*Usuarios registrados en la tabla 'empleados'*/
 				if($usuario !== Null){
 					/*Rol 'administrador'*/
-					if(($usuario->KEYNOM == '0202') || ($usuario->KEYNOM == '1188')) {
+					if(/*($usuario->KEYNOM == '0202') ||*/ ($usuario->KEYNOM == '1188')) {
 						Yii::app()->getSession()->add('id', $usuario->KEYNOM);
 						Yii::app()->getSession()->add('nombre', Empleados::model()->getNombreCompleto($usuario->KEYNOM));
 						Yii::app()->getSession()->add('login', $usuario->NIT_M);
@@ -120,7 +120,7 @@ class SiteController extends Controller
 					}
 
 					/*Rol 'usuario interno'.Todos los usuarios del area de sistemas menos el jefe (KEYNOM = 0202) y la secretaria (KEYNOM = 0056)*/
-					elseif(($usuario->GRUPO_DPTO_M == '12') && ($usuario->KEYNOM != '0202')  && ($usuario->KEYNOM != '0056')){
+					elseif(($usuario->GRUPO_DPTO_M == '12') /*&& ($usuario->KEYNOM != '0202') */ && ($usuario->KEYNOM != '0056')){
 						Yii::app()->getSession()->add('id', $usuario->KEYNOM);
 						Yii::app()->getSession()->add('nombre', Empleados::model()->getNombreCompleto($usuario->KEYNOM));
 						Yii::app()->getSession()->add('login', $usuario->NIT_M);

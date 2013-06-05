@@ -20,9 +20,9 @@ $this->breadcrumbs=array(
 	'attributes'=>array(
 		//'idSolicitud',
 		array('name'=>'fecha_envio', 
-			'value'=>explode(" ", $model->fecha_envio)[0]),
+			'value'=>substr($model->fecha_envio, 0, 10)),
 		array('fecha_envio', 'label'=>'Hora de envio',
-			'value'=>explode(" ", $model->fecha_envio)[1]),
+			'value'=>substr($model->fecha_envio, 11, 8)),
 		array('name'=>'idArea', 'label'=>'Area solicitante', 'value'=>$model->idAreaOrigen->nombre),
 		'descripcion',		
 		//'idUsuario_origen',

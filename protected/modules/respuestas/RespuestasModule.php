@@ -24,8 +24,11 @@ class RespuestasModule extends CWebModule
 
 			return $controller->items_menu =  array(
 												array('label'=>'Inicio', 'url'=>array('default/index')),
-								                array('label'=>'Mis respuestas', 'url'=>'#', 'items'=>array(
-								                	 array('label'=>'Solicitudes pendientes', 'url'=>array('solicitudes/admin')),
+												array('label'=>'Buzon de salida', 'url'=>'#', 'items'=>array(
+								                	 array('label'=>'Nueva solicitud', 'url'=>array('solicitudes/create')),
+								                )),
+								                array('label'=>'Buzon de entrada', 'url'=>'#', 'items'=>array(
+								                	 array('label'=>'Solicitudes por responder', 'url'=>array('solicitudes/admin')),
 								                    array('label'=>'Historial de respuestas', 'url'=>array('respuestas/admin')),
 								                )),
 						            		);

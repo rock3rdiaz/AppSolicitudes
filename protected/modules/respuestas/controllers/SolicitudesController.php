@@ -31,11 +31,11 @@ class SolicitudesController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'downloadAdjunto', 'devolver'),
+				'actions'=>array('create','update', 'downloadAdjunto', 'devolver', 'adminSolicitudesSalientes', 'viewSolicitudesSalientes'),
 				'users'=>array(Yii::app()->getSession()->get('login')),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete', 'downloadAdjunto', 'devolver'),
+				'actions'=>array('admin','delete', 'downloadAdjunto', 'devolver', 'adminSolicitudesSalientes', 'viewSolicitudesSalientes'),
 				'users'=>array(Yii::app()->getSession()->get('login')),
 			),
 			array('deny',  // deny all users
@@ -61,21 +61,43 @@ class SolicitudesController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Solicitudes;
+		$model_solicitudes = new Solicitudes();
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		if($model_solicitudes->getNumSolicitudePorPuntuar(Yii::app()->getSession()->get('id')) <= 3){
 
-		if(isset($_POST['Solicitudes']))
-		{
-			$model->attributes=$_POST['Solicitudes'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->idSolicitud));
+			$model_empleados = new Empleados();
+			$posibles_destinatarios = $model_empleados->getAllPosiblesDestinatarios();
+
+			$model = new Solicitudes();
+
+			// Uncomment the following line if AJAX validation is needed
+			// $this->performAjaxValidation($model);
+
+			if(isset($_POST['Solicitudes']))
+			{
+				$model->attributes = $_POST['Solicitudes'];
+				$model->fecha_envio = date('Y-m-d H:i:s');
+				$model->estado = 'pendiente';
+				$model->idUsuario_origen = Yii::app()->getSession()->get('id');
+				$file = CUploadedFile::getInstance($model, 'adjunto');
+				$model->adjunto = $file;	
+				
+				if($model->save()){
+					if($model->adjunto != NULL){
+						$file->saveAs(Yii::app()->basePath.'/data/adjuntos_solicitudes/'.$file);
+					}				
+					$this->redirect(array('view','id'=>$model->idSolicitud));
+				}
+			}
+
+			$this->render('create',array(
+				'model'=>$model,			
+				'listado_usuarios'=>$posibles_destinatarios,
+			));
 		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		else{
+			$this->redirect(array('default/error'));
+		}		
 	}
 
 	/**

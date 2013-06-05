@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"num",
+				"num_respuestas"
+			],
+			[
+				"fecha",
+				"fecha_hasta  (variable)"
+			],
+			[
+				"sty",
+				"style	<style>"
+			],
+			[
 				"model",
 				"model_solicitud"
 			],
@@ -158,10 +170,6 @@
 			[
 				"nombre",
 				"nombre_completo"
-			],
-			[
-				"fecha",
-				"fecha_nacimiento_usuario"
 			],
 			[
 				"va",
@@ -328,10 +336,6 @@
 				"funcionarios"
 			],
 			[
-				"sty",
-				"style	@style"
-			],
-			[
 				"fun",
 				"_funcionario"
 			],
@@ -404,10 +408,6 @@
 				"fechaingreso"
 			],
 			[
-				"num",
-				"num_dias"
-			],
-			[
 				"data",
 				"data_provider"
 			]
@@ -415,6 +415,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "protected/modules/secretaria/controllers/InformesController.php",
+			"settings":
+			{
+				"buffer_size": 1596,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/app/Miscelaneaus.js",
+			"settings":
+			{
+				"buffer_size": 6063,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/modules/secretaria/views/informes/indicadorOportunidadSolucionRequerimiento.php",
+			"settings":
+			{
+				"buffer_size": 2134,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "protected/models/Solicitudes.php",
+			"settings":
+			{
+				"buffer_size": 9269,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -425,6 +457,10 @@
 			[
 				"package",
 				"Package Control: Install Package"
+			],
+			[
+				"Snippet: row-l",
+				"Snippet: row-fluid"
 			],
 			[
 				"packa",
@@ -491,7 +527,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 536.0
+		"width": 712.0
 	},
 	"console":
 	{
@@ -508,51 +544,85 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/SolicitudesController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/config/main.php",
+		"/C/xampp/htdocs/AppSolicitudes/js/vendors/Highcharts-3.0.2/js/modules/exporting.src.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/informes/indicadorOportunidadSolucionRequerimiento.php",
 		"/C/xampp/htdocs/AppSolicitudes/js/Miscelaneaus.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/admin/views/default/_estPuntajes.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/models/Respuestas.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/models/Solicitudes.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/admin/views/default/index.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/admin/views/default/_estCategorias.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/admin/controllers/DefaultController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/RespuestasController.php",
+		"/C/xampp/htdocs/AppGymHC/js/Miscelaneaus.js",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/SecretariaModule.php",
+		"/C/Users/rockerW7/Desktop/Nueva carpeta/index_1.html",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/InformesController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/informes/oportunidadSolucionRequerimiento.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/solicitudes/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/solicitudes/create.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/create.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/DefaultController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/view.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/RespuestasModule.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/controllers/SiteController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/SolicitudesController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/update.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/create.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/RespuestasController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/SolicitudesController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/admin_solicitudes_salientes.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/SolicitudesController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/update.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/admin.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/view_solicitudes_salientes.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/_form.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/RespuestasController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/admin.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/default/error.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/default/error.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/DefaultController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/DefaultController.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/create.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/solicitudes/view.php",
+		"/C/xampp/htdocs/PHPTraining/hora.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/default/index.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/view.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/_form.php",
+		"/C/xampp/htdocs/AppGymHC/protected/modules/fisioterapeuta/controllers/ValoracionFuncionalController.php",
+		"/C/Users/rockerW7/Documents/yii/framework/zii/widgets/CDetailView.php",
+		"/C/xampp/htdocs/AppSolicitudes/protected/extensions/bootstrap/widgets/TbDetailView.php",
+		"/C/Users/rockerW7/Documents/yii/framework/db/ar/CActiveRecord.php",
+		"/C/xampp/htdocs/AppGymHC/protected/modules/secretaria/controllers/CitaController.php",
+		"/C/xampp/htdocs/AppGymHC/protected/modules/secretaria/views/cita/_form.php",
+		"/C/xampp/htdocs/AppGymHC/protected/modules/secretaria/controllers/DefaultController.php",
 		"/C/Users/rockerW7/Dropbox/Trabajo de Grado - Mamita/Registro extendido - Jose Alvaro.pdf",
 		"/C/xampp/htdocs/AppSolicitudes/AppSolicitudes.sublime-workspace",
 		"/C/xampp/htdocs/AppSolicitudes/protected/extensions/highcharts/assets/highcharts.src.js",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/view.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/RespuestasController.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/controllers/RespuestasController.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/models/Solicitudes.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/view.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/_form.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/_form.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/_form.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/solicitudes/view.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/SolicitudesController.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/solicitudes/view.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/models/Respuestas.php",
 		"/C/Program Files/nodejs/node_modules/npm/lib/npm.js",
-		"/C/xampp/htdocs/AppSolicitudes/protected/controllers/SiteController.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/models/LoginForm.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/components/UserIdentity.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/admin.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/views/site/login.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/views/respuestas/_form.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/preguntas/controllers/DefaultController.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/solicitudes/admin.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/models/Prioridades.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/RespuestasController.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/_form.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/views/respuestas/create.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/respuestas/create.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/secretaria/controllers/SolicitudesController.php",
 		"/C/Users/rockerW7/Documents/yii/framework/zii/widgets/grid/CButtonColumn.php",
 		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/default/_estDatosGenerales.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/modules/respuestas/views/default/index.php",
-		"/C/xampp/htdocs/AppSolicitudes/protected/config/main.php",
 		"/C/xampp/htdocs/AppGymHC/AppGymHC.sublime-project",
 		"/C/xampp/htdocs/AppGymHC/.gitignore",
 		"/C/xampp/htdocs/AppGymHC/protected/modules/fisioterapeuta/views/valoracionFuncional/_form.php",
 		"/C/xampp/htdocs/AppGymHC/protected/modules/secretaria/views/default/index.php",
 		"/C/xampp/htdocs/AppGymHC/protected/extensions/fullcalendar/FullcalendarWidget.php",
 		"/C/xampp/htdocs/AppGymHC/protected/extensions/fullcalendar/FullcalendarGraphWidget.php",
-		"/C/xampp/htdocs/AppGymHC/js/Miscelaneaus.js",
 		"/C/Users/rockerW7/Desktop/MSSQL_ER.sql",
 		"/C/xampp/htdocs/AppGymHC/protected/config/main.php",
 		"/C/Users/rockerW7/Documents/Archivos Comfenalco/Documentos ingdiaz/Proyectos/GymHC/Base de datos/GymHC-MSSQL.sql",
@@ -601,41 +671,7 @@
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/views/valoracionFuncional/_form.php",
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/instructor/views/programaEjercicios/_search.php",
 		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/secretaria/views/default/index.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/assets/d96e4cb7/fullcalendar.js",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/extensions/fullcalendar/assets/fullcalendar.js",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/extensions/fullcalendar/assets/fullcalendar.css",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/assets/d96e4cb7/fullcalendar.css",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/css/main.css",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/extensions/fullcalendar/FullcalendarWidget.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/modules/fisioterapeuta/views/valoracionFuncional/_form.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/modules/fisioterapeuta/controllers/ValoracionFuncionalController.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/modules/fisioterapeuta/views/valoracionFuncional/create.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/modules/fisioterapeuta/views/valoracionFuncional/admin.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/js/Miscelaneaus.js",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/_form.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/_viewTestFuncionales.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/_viewPerimetros.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/_viewObservaciones.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/_viewFrecuenciaEntrenamiento.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/_viewDatosGenerales.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/_viewAntecedentesUsuario.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/protected/modules/fisioterapeuta/views/valoracionFuncional/create.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/models/HistoriaGYM.php",
-		"/C/xampp/htdocs/AppGymHC/trunk/trunk_0.7/protected/modules/fisioterapeuta/views/valoracionFuncional/_search.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/secretaria/controllers/CitaController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/extensions/fullcalendar/FullcalendarGraphWidget.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/extensions/fullcalendar/assets/fullcalendar.min.js",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/extensions/fullcalendar/assets/jquery-ui-custom.js",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/extensions/fullcalendar/assets/gcal.js",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/secretaria/controllers/DefaultController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/update.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/components/PDF.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/administrador/controllers/CargoController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/controllers/ValoracionFuncionalController.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/models/HistoriaGYM.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/fisioterapeuta/views/valoracionFuncional/update.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/create.php",
-		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/protected/modules/medico/views/evaluacionMedica/_viewDatosGenerales.php"
+		"/C/xampp/htdocs/AppGymHC/branches/branches_0.5/assets/d96e4cb7/fullcalendar.js"
 	],
 	"find":
 	{
@@ -656,6 +692,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"int",
+			"explode",
 			"model",
 			"int NOT NULL",
 			"model_programa_ejercicios_ejercicios",
@@ -732,8 +770,648 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "protected/modules/secretaria/controllers/InformesController.php",
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1463,
+								1463
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/app/Miscelaneaus.js",
+					"settings":
+					{
+						"buffer_size": 6063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5324,
+								5324
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1014.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "protected/modules/secretaria/views/informes/indicadorOportunidadSolucionRequerimiento.php",
+					"settings":
+					{
+						"buffer_size": 2134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1960,
+								1960
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "protected/models/Solicitudes.php",
+					"settings":
+					{
+						"buffer_size": 9269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8837,
+								8837
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2664.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -768,6 +1446,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 88.0
+	},
 	"output.phpdocumentor":
 	{
 		"height": 100.0

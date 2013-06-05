@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Mis solicitudes pendientes'=>array('admin'),
+	'Solicitudes por responder'=>array('admin'),
 	$model->idSolicitud,
 );
 
@@ -20,9 +20,9 @@ $this->breadcrumbs=array(
 	'attributes'=>array(
 		'idSolicitud',
 		array('name'=>'fecha_envio',
-			'value'=>explode(" ", $model->fecha_envio)[0]),
+			'value'=>substr($model->fecha_envio, 0, 10)),
 		array('name'=>'fecha_envio', 'label'=>'Hora de envio',
-			'value'=>explode(" ", $model->fecha_envio)[1]),
+			'value'=>substr($model->fecha_envio, 11, 8)),
 		'descripcion',
 		array('name'=>'idUsuario_origen', 'label'=>'Remitente',
 			'value'=>($model->idUsuario_origen < 8000) ? Empleados::model()->getNombreCompleto($model->idUsuario_origen) : Temp::model()->getNombreCompleto($model->idUsuario_origen)//Usuarios de nomina < 8000; Usuarios temporales >= 8000
@@ -34,7 +34,8 @@ $this->breadcrumbs=array(
 		array('name'=>'idCategoria', 'label'=>'Categoria',
 			'value'=>Categorias::model()->findByPk($model->idCategoria)->descripcion
 			),
-		//'idUsuario_destino',
+		array('name'=>'idUsuario_destino', 'label'=>'Nombre destinatario',
+			'value'=>Empleados::model()->getNombreCompleto($model->idUsuario_destino)),
 		array('name'=>'idArea_origen', 
 			'value'=>$model->idAreaOrigen->nombre
 			),
@@ -48,8 +49,9 @@ $this->breadcrumbs=array(
 
 <?php $this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'linkButton',
-			'icon'=>'white remove',
 			'type'=>'success',
 			'label'=>'Regresar',
-			'url'=>array('solicitudes/admin'),
+			'icon'=>'white remove',
+			'url'=>array('solicitudes/admin')
 )); ?>
+

@@ -47,7 +47,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'idRespuesta',
 		array('name'=>'fecha_envio',
-			'value'=>'explode(" ", $data->fecha_envio)[0]'),
+			'value'=>'substr($data->fecha_envio, 0, 10)'),
 		'descripcion',		
 		array('name'=>'idPuntaje', 'value'=>'(isset($data->idPuntaje))?$data->idPuntaje0->descripcion:Null'),
 		/*array('name'=>'idSolicitud', 'value'=>'Usuarios::model()->getNombreCompleto($data->idSolicitud0->idUsuario_origen)'),*/

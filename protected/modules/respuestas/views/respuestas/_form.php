@@ -7,7 +7,7 @@
 	
 	<div class="well">
 		<label for="descripcion_solicitud">Descripcion de la solicitud seleccionada</label>	
-		<?php echo CHtml::textArea('descripcion_solicitud', $descripcion_solicitud, array('class'=>'span5', 'maxlength'=>255, 'rows'=>15, 'disabled'=>'true'))?>
+		<?php echo CHtml::textArea('descripcion_solicitud', $descripcion_solicitud, array('class'=>'span5', 'maxlength'=>8000, 'rows'=>15, 'disabled'=>'true'))?>
 
 		<br/>
 		<div class="well">
@@ -30,7 +30,7 @@
 
 	<?php //echo $form->textFieldRow($model,'fecha',array('class'=>'span5')); ?>
 
-	<?php echo $form->textAreaRow($model,'descripcion', array('class'=>'span5','maxlength'=>255, 'rows'=>15)); ?>	
+	<?php echo $form->textAreaRow($model,'descripcion', array('class'=>'span5','maxlength'=>8000, 'rows'=>15)); ?>	
 
 	<?php //echo $form->textFieldRow($model,'puntaje',array('class'=>'span5')); ?>
 

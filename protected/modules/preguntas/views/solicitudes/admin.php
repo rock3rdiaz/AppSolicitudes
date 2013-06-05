@@ -46,7 +46,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	//'filter'=>$model,
 	'columns'=>array(
 		//'idSolicitud',
-		array('name'=>'fecha_envio', 'value'=>'explode(" ", $data->fecha_envio)[0]'),
+		array('name'=>'fecha_envio', 'value'=>'substr($data->fecha_envio, 0, 10)'),
 		'descripcion',		
 		//'idUsuario_origen',
 		array('name'=>'estado', 'value'=>'ucfirst($data->estado)'),

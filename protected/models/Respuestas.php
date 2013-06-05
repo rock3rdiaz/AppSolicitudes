@@ -45,9 +45,9 @@ class Respuestas extends CActiveRecord
 		return array(
 			array('fecha_envio, descripcion, idSolicitud', 'required'),
 			array('idPuntaje, idSolicitud', 'numerical', 'integerOnly'=>true),
-			array('descripcion', 'length', 'max'=>255),
+			array('descripcion', 'length', 'max'=>8000),
 			array('adjunto', 'length', 'max'=>300),
-			array('adjunto', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>true), 
+			array('adjunto', 'file', 'types'=>'jpg, gif, png, xlsx, xls, docx, doc, txt', 'allowEmpty'=>true), 
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('idRespuesta, fecha, descripcion, idPuntaje, idSolicitud', 'safe', 'on'=>'search'),
@@ -187,6 +187,21 @@ class Respuestas extends CActiveRecord
 		$criteria->join = "inner join solicitudes on t.idSolicitud = solicitudes.idSolicitud";
 		$criteria->condition = "solicitudes.idUsuario_destino = '$id_usuario'";
 		$criteria->addCondition("t.idPuntaje = (select idPuntaje from puntajes where descripcion = '$puntaje')");
+
+		return $this->count($criteria);
+	}
+
+	/**
+	 * @summary: Metodo que permite obtener el numero total de respuestas dadas dos fechas
+	 * @param [sting] $fecha_desde [Fecha de inicio de la busqueda]
+	 * @param [sting] $fecha_hasta [Fecha final de la busqueda]
+	 * @return [int] $num [Numero total de respuestas encontradas]
+	 */
+	public function getNumAll($fecha_desde, $fecha_hasta){
+
+		$criteria = new CDbCriteria();
+		
+		$criteria->addBetweenCondition('fecha_envio', $fecha_desde, $fecha_hasta);		
 
 		return $this->count($criteria);
 	}
